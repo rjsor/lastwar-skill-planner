@@ -1,4 +1,5 @@
-    {
+[    
+	{
       "level": 100,
       "skills": [
         { "name": "xxxx", "image": "images/E100-1.png", "max": 5 },
@@ -166,3 +167,4 @@
         { "name": "xxxx", "image": "images/E0-3.png", "max": 1 }
       ]
     }
+]
