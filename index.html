@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Engineer Skills Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Engineer Skills Planner</h1>
+  <div id="planner"></div>
+
+  <script>
+    async function loadSkills() {
+      const response = await fetch("skills.json");
+      const data = await response.json();
+      const container = document.getElementById("planner");
+
+      for (const level in data) {
+        const section = document.createElement("section");
+        section.innerHTML = `<h2>${level.toUpperCase()}</h2>`;
+        
+        data[level].forEach(skill => {
+          const div = document.createElement("div");
+          div.innerHTML = `
+            <img src="${skill.image}" width="50"><br>
+            <strong>${skill.name}</strong><br>
+            <button onclick="subtract(this)">−</button>
+            <span>0</span> / ${skill.max}
+            <button onclick="add(this)">+</button>
+          `;
+          section.appendChild(div);
+        });
+        container.appendChild(section);
+      }
+    }
+
+    function add(btn) {
+      const span = btn.parentElement.querySelector("span");
+      const max = parseInt(span.nextSibling.textContent.replace("/", ""));
+      let val = parseInt(span.textContent);
+      if (val < max) span.textContent = val + 1;
+    }
+
+    function subtract(btn) {
+      const span = btn.parentElement.querySelector("span");
+      let val = parseInt(span.textContent);
+      if (val > 0) span.textContent = val - 1;
+    }
+
+    loadSkills();
+  </script>
+</body>
+</html>

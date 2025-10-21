@@ -1,0 +1,168 @@
+    {
+      "level": 100,
+      "skills": [
+        { "name": "xxxx", "image": "images/E100-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E100-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E100-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 95,
+      "skills": [
+        { "name": "xxxx", "image": "images/E95-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E95-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E95-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 90,
+      "skills": [
+        { "name": "xxxx", "image": "images/E90-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E90-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E90-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 85,
+      "skills": [
+        { "name": "xxxx", "image": "images/E85-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E85-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E85-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 80,
+      "skills": [
+        { "name": "xxxx", "image": "images/E80-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E80-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E80-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 75,
+      "skills": [
+        { "name": "xxxx", "image": "images/E75-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E75-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E75-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 70,
+      "skills": [
+        { "name": "xxxx", "image": "images/E70-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E70-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E70-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 65,
+      "skills": [
+        { "name": "xxxx", "image": "images/E65-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E65-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E65-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 60,
+      "skills": [
+        { "name": "xxxx", "image": "images/E60-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E60-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E60-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 55,
+      "skills": [
+        { "name": "xxxx", "image": "images/E55-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E55-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E55-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 50,
+      "skills": [
+        { "name": "xxxx", "image": "images/E50-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E50-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E50-3.png", "max": 3 }
+      ]
+    },
+    {
+      "level": 45,
+      "skills": [
+        { "name": "xxxx", "image": "images/E45-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E45-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E45-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 40,
+      "skills": [
+        { "name": "xxxx", "image": "images/E40-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E40-2.png", "max": 3 },
+        { "name": "xxxx", "image": "images/E40-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 35,
+      "skills": [
+        { "name": "xxxx", "image": "images/E35-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E35-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E35-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 30,
+      "skills": [
+        { "name": "xxxx", "image": "images/E30-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E30-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E30-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 25,
+      "skills": [
+        { "name": "xxxx", "image": "images/E25-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E25-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E25-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 20,
+      "skills": [
+        { "name": "xxxx", "image": "images/E20-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E20-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E20-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 15,
+      "skills": [
+        { "name": "xxxx", "image": "images/E15-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E15-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E15-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 10,
+      "skills": [
+        { "name": "xxxx", "image": "images/E10-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E10-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E10-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 5,
+      "skills": [
+        { "name": "xxxx", "image": "images/E5-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E5-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E5-3.png", "max": 1 }
+      ]
+    },
+    {
+      "level": 0,
+      "skills": [
+        { "name": "xxxx", "image": "images/E0-1.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E0-2.png", "max": 5 },
+        { "name": "xxxx", "image": "images/E0-3.png", "max": 1 }
+      ]
+    }
