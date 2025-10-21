@@ -3,45 +3,114 @@
 <head>
   <meta charset="utf-8">
   <title>Engineer Skills Planner</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .controls {
+      margin-bottom: 20px;
+    }
+
+    input[type="number"] {
+      width: 80px;
+      padding: 4px;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      background-color: #eee;
+      padding: 5px 10px;
+      border-left: 4px solid #999;
+    }
+
+    /* Use grid to organize skill icons */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .skill {
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .skill button {
+      margin: 2px;
+      width: 25px;
+      height: 25px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <h1>Engineer Skills Planner</h1>
+  <div class="controls">
+    <label for="skillPoints">Skill Points:</label>
+    <input type="number" id="skillPoints">
+    <button id="setBtn">SET</button>
+    <button id="resetBtn">RESET</button>
+  </div>
+
   <div id="planner"></div>
 
   <script>
     async function loadSkills() {
-      try {
-        const response = await fetch("skills.json");
-        const data = await response.json();
-        const container = document.getElementById("planner");
+      const response = await fetch("skills.json");
+      const data = await response.json();
+      const container = document.getElementById("planner");
 
-        data.forEach(entry => {
-          const section = document.createElement("section");
-          section.innerHTML = `<h2>Level ${entry.level}</h2>`;
+      for (const level in data) {
+        const section = document.createElement("section");
+        section.innerHTML = `<h2>${level}</h2>`;
+        const grid = document.createElement("div");
+        grid.className = "skills-grid";
 
-          entry.skills.forEach(skill => {
-            const div = document.createElement("div");
-            div.innerHTML = `
-              <img src="${skill.image}" width="50"><br>
-              <strong>${skill.name}</strong><br>
-              <button onclick="subtract(this)">−</button>
-              <span>0</span> / ${skill.max}
-              <button onclick="add(this)">+</button>
-            `;
-            section.appendChild(div);
-          });
-
-          container.appendChild(section);
+        data[level].forEach(skill => {
+          const div = document.createElement("div");
+          div.className = "skill";
+          div.innerHTML = `
+            <img src="${skill.image}" alt="${skill.name}">
+            <br><strong>${skill.name}</strong><br>
+            <button onclick="subtract(this)">−</button>
+            <span>0</span> / ${skill.max}
+            <button onclick="add(this)">+</button>
+          `;
+          grid.appendChild(div);
         });
-      } catch (err) {
-        console.error("Error loading skills.json:", err);
+        section.appendChild(grid);
+        container.appendChild(section);
       }
     }
 
     function add(btn) {
       const span = btn.parentElement.querySelector("span");
-      const max = parseInt(btn.nextSibling.textContent.replace("/", "").trim());
+      const max = parseInt(span.nextSibling.textContent.replace("/", ""));
       let val = parseInt(span.textContent);
       if (val < max) span.textContent = val + 1;
     }
